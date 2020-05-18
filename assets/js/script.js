@@ -5,7 +5,7 @@ var footerHeight = document.getElementById('bottomMenu').clientHeight;
 document.getElementById('contentPage').style.minHeight = screenHeight - menuHeight - footerHeight + 'px';
 //fonction montrant la présentation du produit sélectionné
 function showPresentation(price, ref, title) {
-    var textPresentation = document.getElementById(ref).innerHTML;
+    //var textPresentation = document.getElementById(ref).innerHTML;
     var presentationImage = document.getElementById('presentationImage');
     var presentationTitle = document.getElementById('presentationTitle');
     var presentationTexte = document.getElementById('presentationText');
@@ -19,21 +19,17 @@ function showPresentation(price, ref, title) {
     presentationImage.src = 'assets/img/products/' + ref;
     presentationImage.alt = title;
     presentationTitle.innerHTML = title;
-    presentationTexte.innerHTML = textPresentation;
+    //presentationTexte.innerHTML = textPresentation;
     presentationPrice.innerHTML = price + ' euros';
     addBasketButton.setAttribute('price', price);
     addBasketButton.setAttribute('ref', ref);
     addBasketButton.setAttribute('title', title);
 }
 //fonction sélectionnant le thème
-
-//fonction affichant la liste des produits voulus
-function showProductList(categorie, thema){
-    var sectionList = document.getElementsByTagName('section');
-    var productList = document.getE
-    for (index = 0; index < sectionList.length; index++) {
-        sectionList[index].style.display = 'none';
+function selectThema(thema) {
+    var categorieSelector = document.getElementsByClassName("categorieSelector");
+    for (index = 0; index < categorieSelector.length; index++){
+        categorieSelector[index].setAttribute('thema', thema);
     }
-    document.getElementById('productsListe').style.display = 'block';
-
 }
+//fonction affichant la liste des produits voulus

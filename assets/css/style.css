@@ -50,7 +50,7 @@ h1 {
     text-align: center;
 }
 
-p {
+#productsList p {
     text-align: center;
     width: 75%;
     font-weight: bold;
