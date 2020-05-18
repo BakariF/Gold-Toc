@@ -29,6 +29,26 @@ h1 {
 #contentPage {
     background-image: url("../img/fondGold.jpg");
 }
+/* Presentation */
+.presentation {
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid #887c0f;
+}
+.titleDescription {
+    font-weight: bold;
+}
+.price {
+    color: #37b28e;
+    font-weight: bold;
+}
+button {
+    background-color: #887c0f;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
 @media screen and (min-width:991px) {
 /* Menu + footer */
 header, footer, .categorie, .thema, .networkButton {
