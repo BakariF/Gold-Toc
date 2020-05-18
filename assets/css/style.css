@@ -1,0 +1,76 @@
+/* Menu + footer */
+header, footer {
+    background-color: black;
+    width: 100%;
+}
+.categorie, .thema {
+    background-color: black;
+}
+#menu {
+    padding: 0;
+}
+h1 {
+    color: rgb(155, 152, 9);
+}
+#bucksThema {
+    background-image: url("../img/fondButtonBillet.jpg");
+}
+#goldThema {
+    background-image: url("../img/fondButtonOr.jpg");
+}
+.networkButton {
+    width: 10%;
+}
+/* Menu + footer (end) */
+#contentPage {
+    background-image: url("../img/billetBackground.png");
+    height: 500px;
+}
+@media screen and (min-width:991px) {
+/* Menu + footer */
+header, footer, .categorie, .thema {
+    height: 100px;
+}
+h1 {
+    width: 30%;
+}
+#panier {
+    width: 10%;
+}
+#menuList {
+    width: 100%;
+}
+.categorie, .thema {
+    width: 20%;
+}
+#goldThema, #bucksThema {
+    width: 100%;
+    height: 50px;
+}
+.networkButton {
+    height: 100px;
+}
+/* Menu + footer (end) */
+}
+@media screen and (max-width:991px) {
+/* Menu + footer */
+header, footer {
+    height: 60px;
+}
+#menuButton, #panier {
+    width: 25%;
+}
+#menuList {
+    width: 50%;
+}
+#goldThema, #bucksThema {
+    width: 50%;
+}
+.categorie, .thema, #goldThema, #bucksThema {
+    height: 35px;
+}
+.networkButton {
+    height: 60px;
+}
+/* Menu + footer (end) */
+}
