@@ -1,4 +1,7 @@
 /* Menu + footer */
+body {
+    font-family: 'Rouge Script', cursive;
+}
 header, footer {
     background-color: black;
     width: 100%;
@@ -20,15 +23,15 @@ h1 {
 }
 .networkButton {
     width: 10%;
+    margin-bottom: 0;
 }
 /* Menu + footer (end) */
 #contentPage {
-    background-image: url("../img/billetBackground.png");
-    height: 500px;
+    background-image: url("../img/fondGold.jpg");
 }
 @media screen and (min-width:991px) {
 /* Menu + footer */
-header, footer, .categorie, .thema {
+header, footer, .categorie, .thema, .networkButton {
     height: 100px;
 }
 h1 {
@@ -46,9 +49,6 @@ h1 {
 #goldThema, #bucksThema {
     width: 100%;
     height: 50px;
-}
-.networkButton {
-    height: 100px;
 }
 /* Menu + footer (end) */
 }
