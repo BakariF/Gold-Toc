@@ -1,47 +1,80 @@
 /* Menu + footer */
+
 body {
     font-family: 'Rouge Script', cursive;
 }
-header, footer {
+
+header,
+footer {
     background-color: black;
     width: 100%;
 }
-.categorie, .thema {
+
+.categorie,
+.thema {
     background-color: black;
 }
+
 #menu {
     padding: 0;
 }
+
 h1 {
     color: rgb(155, 152, 9);
 }
+
 #bucksThema {
     background-image: url("../img/fondButtonBillet.jpg");
 }
+
 #goldThema {
     background-image: url("../img/fondButtonOr.jpg");
 }
+
 .networkButton {
     width: 10%;
     margin-bottom: 0;
 }
+
+
 /* Menu + footer (end) */
+
 #contentPage {
     background-image: url("../img/fondGold.jpg");
 }
+
+
+/* Listenning produit */
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+    color: white;
+}
+
+
 /* Presentation */
+
 .presentation {
     background-color: white;
     border-radius: 20px;
     border: 4px solid #887c0f;
 }
+
 .titleDescription {
     font-weight: bold;
 }
+
 .price {
     color: #37b28e;
     font-weight: bold;
 }
+
 button {
     background-color: #887c0f;
     color: white;
@@ -49,49 +82,65 @@ button {
     border: none;
     padding: 10px;
 }
+
 @media screen and (min-width:991px) {
-/* Menu + footer */
-header, footer, .categorie, .thema, .networkButton {
-    height: 100px;
+    /* Menu + footer */
+    header,
+    footer,
+    .categorie,
+    .thema,
+    .networkButton {
+        height: 100px;
+    }
+    h1 {
+        width: 30%;
+    }
+    #panier {
+        width: 10%;
+    }
+    #menuList {
+        width: 100%;
+    }
+    .categorie,
+    .thema {
+        width: 20%;
+    }
+    #goldThema,
+    #bucksThema {
+        width: 100%;
+        height: 50px;
+    }
+    /* Menu + footer (end) */
 }
-h1 {
-    width: 30%;
-}
-#panier {
-    width: 10%;
-}
-#menuList {
-    width: 100%;
-}
-.categorie, .thema {
-    width: 20%;
-}
-#goldThema, #bucksThema {
-    width: 100%;
-    height: 50px;
-}
-/* Menu + footer (end) */
-}
+
 @media screen and (max-width:991px) {
-/* Menu + footer */
-header, footer {
-    height: 60px;
+    /* Menu + footer */
+    header,
+    footer {
+        height: 60px;
+    }
+    #menuButton,
+    #panier {
+        width: 25%;
+    }
+    #menuList {
+        width: 50%;
+    }
+    #goldThema,
+    #bucksThema {
+        width: 50%;
+    }
+    .categorie,
+    .thema,
+    #goldThema,
+    #bucksThema {
+        height: 35px;
+    }
+    .networkButton {
+        height: 60px;
+    }
+    /* Menu + footer (end) */
 }
-#menuButton, #panier {
-    width: 25%;
-}
-#menuList {
-    width: 50%;
-}
-#goldThema, #bucksThema {
-    width: 50%;
-}
-.categorie, .thema, #goldThema, #bucksThema {
-    height: 35px;
-}
-.networkButton {
-    height: 60px;
-}
-/* Menu + footer (end) */
-}
+
+
 /* page d'accueil */

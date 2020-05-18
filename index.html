@@ -1,44 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gold'Toc</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" media="screen" type="text/css" href="assets/css/style.css" />
-    </head>
-    <body>
-        <header id="topMenu">
-            <nav class="navbar navbar-expand-lg w-100" id="menu">
-                <button id="menuButton" class="navbar-toggler float-left text-center" data-toggle="collapse" data-target="#menuContent">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold'Toc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header id="topMenu">
+        <nav class="navbar navbar-expand-lg w-100" id="menu">
+            <button id="menuButton" class="navbar-toggler float-left text-center" data-toggle="collapse" data-target="#menuContent">
                     <img src="assets/img/min/menu.png">
                 </button>
-                <div class="collapse navbar-collapse order-3 order-lg-0" id="menuContent">
-                    <ul id="menuList" class="navbar-nav">
-                        <li class="nav-item thema">
-                            <div id="goldThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" href="#">L'or</a></div>
-                            <div id="bucksThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" href="#">Les billets</a></div>
-                        </li>
-                        <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Objets du quotidien</a></li>
-                        <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Accessoires</a></li>
-                        <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Costumes</a></li>
-                        <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Décorations</a></li>
-                    </ul>
+            <div class="collapse navbar-collapse order-3 order-lg-0" id="menuContent">
+                <ul id="menuList" class="navbar-nav">
+                    <li class="nav-item thema">
+                        <div id="goldThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" href="#">L'or</a></div>
+                        <div id="bucksThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" href="#">Les billets</a></div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Objets du quotidien</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Accessoires</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Costumes</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" href="#">Décorations</a></li>
+                </ul>
+            </div>
+            <h1 class="float-left text-center">Gold'Toc</h1>
+            <div id="panier" class="float-left text-center">
+                <img src="assets/img/min/iconePanier.png">
+            </div>
+        </nav>
+    </header>
+    <div id="contentPage">
+        <section id="Accueil">
+            <h2 class="pt-2 text-center">Bienvenue chez Gold'Toc</h2>
+            <h3 class="my-3 text-center">Tu veux paraître riche, mais tu n'as pas de thunes ?! Gold'Toc est fait pour toi !</h3>
+            <img src="assets/img/accueil.png" class="offset-1 col-10" alt="" />
+        </section>
+        <section>
+            <h1>Objets du quotidien</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Briquet en or.jpg" alt="Briquet en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Clavier en or.jpg" alt="Clavier en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Clé USB or.png" alt="Clé USB en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Papier toillette or.png" alt="Papier toillette en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Souris en or.jpg" alt="Souris en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Tubeuse en or.jpg" alt="Tubeuse en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
                 </div>
-                <h1 class="float-left text-center">Gold'Toc</h1>
-                <div id="panier" class="float-left text-center">
-                    <img src="assets/img/min/iconePanier.png">
+            </div>
+            <h1>Objets du quotidien</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Briquet en billet.jpg" alt="Briquet en billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Clé USB billet.png" alt="Clé USB en billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Papier toillette billet.png" alt="Papier toillette en billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/Pince à billet dollar.png" alt="Pince à billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/unknown.png" alt="Tasse billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Objets du quotidien/mouchoirs billet.jpg" alt="Mouchoirs billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <div id="contentPage">
-            <section id="Accueil">
-                <h2 class="pt-2 text-center">Bienvenue chez Gold'Toc</h2>
-                <h3 class="my-3 text-center">Tu veux paraître riche, mais tu n'as pas de thunes ?! Gold'Toc est fait pour toi !</h3>
-                <img src="assets/img/accueil.png" class="offset-1 col-10" alt=""/>
-            </section>
-            <section id="presentation">
-                <!--Description 1-->
+            </div>
+            <h1>Accesoires</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/baguesOr.png" alt="Bagues en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/cachesTetons.png" alt="Cache téton or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/chaineEnOr.png" alt="Chaînes en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/dentsOr.png" alt="Dents en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/pistoletABillets.jpg" alt="Pistolet à billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/tetineDentsOr.png" alt="Tétine en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Accesoires</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/billets.jpg" alt="Billets" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/boucleDeCeinture.jpg" alt="Boucle ceinture billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/cadenatBillets.png" alt="Cadenas billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/casquetteBillets.jpg" alt="Casquette billets" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/coqueBillets.png" alt="Coque téléphone" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/Accesoires/parapluieBillets.jpg" alt="Parapluie billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Costumes</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/5f179c69-b196-444e-98b3-764abeb79b8f_1.ac715112c82c114288711d4d1a9384d9.jpeg" alt="Costume en or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/deguisement-emir-luxe-de-qatari.jpg" alt="Emir quataris" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/gold-black-leather-short-sleeves-fashion-boys-kids-children-performance-school-play-harem-pants-hip-hop-jazz-dj-ds-singer-dance-costumes-outfits-dance-wear-4614-600x600.jpg" alt="Costume en or enfant" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/Shiny-Metallic-Gold-Dress-Women-Summer-Sexy-Convertible-Multi-Way-Wrap-Bandage-Dress-Plus-Size-Evening.jpg_q50.jpg" alt="Robe de soirée or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/stella-mccartney-kids-girls-metallic-gold-silk-dress-283007-2be55d5377b06acefc7a78b639cd375000220f7d.jpg" alt="Robe soirée or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/womens-solid-gold-mock-neck-jumpsuit.jpg" alt="Juste au corps or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Costumes</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/7676MoneyMan.jpg" alt="Veste dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/Costume-3-piece-imprime-billets-de-banque.jpg" alt="Costume homme dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/costume-sexy-bbbb10-113503money.jpg" alt="Costume femme dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/mn1_000568.jpg" alt="Dollar enfant" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/money-baby.jpg" alt="Bébé dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/costumes/money-hunny_image_600x.gif" alt="Robe femme dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Décorations</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/698_856_00-6-0-00.jpg" alt="Statue éléphant or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/62894350-fauteuil-d-or-isolé-sur-fond-blanc-rendu-3d.jpg" alt="Fauteuil or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/coca-cola_mirror_gold_luminarc_latabledarc.jpeg" alt="Verre coca or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/objet-decoration-cerise-or.jpg" alt="Cerises d'or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/ananas-decoration-deco-or-dore.jpg" alt="Ananas or" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/objet-de-deco-main-doree-sur-presentoir-human-.jpg" alt="Main dorée" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Décorations</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/91aKhrhTBeL._AC_SX450_.jpg" alt="Housse de couette dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/nappe-billet-de-banque.jpg" alt="Nappe billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/papiers-peints-cuisine-billets-de-banque.jpg.jpeg" alt="Papier peint" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/rBVaI1jy2qWAMsQgAAGbe4Ay9iw953.jpg" alt="Sol dollar" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/unknown.png" alt="Tableau billet" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/Img/décorations/unknown (1).png" alt="Socle billet de banque" style="width: 100%; height: 84%;">
+                        <p>Prix :</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="presentation">
+            <!--Description 1-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-10 offset-1">
@@ -49,7 +285,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -57,8 +293,8 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
-                                        </div> 
+                                            <button>Ajouter au panier</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +314,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -86,7 +322,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +343,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -115,7 +351,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +372,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -144,7 +380,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +401,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -173,7 +409,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +430,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -202,7 +438,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -223,7 +459,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -231,7 +467,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +488,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -260,7 +496,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -281,7 +517,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -289,7 +525,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -310,7 +546,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -318,7 +554,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 mb-2 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +575,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -347,7 +583,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -368,7 +604,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -376,7 +612,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +633,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -405,7 +641,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -426,7 +662,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -434,7 +670,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -455,7 +691,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -463,7 +699,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -484,7 +720,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -492,7 +728,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -513,7 +749,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -521,7 +757,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -542,7 +778,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -550,7 +786,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -571,7 +807,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -579,7 +815,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -600,7 +836,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -608,7 +844,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -629,7 +865,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -637,7 +873,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -658,7 +894,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -666,7 +902,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -687,7 +923,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -695,7 +931,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -716,7 +952,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -724,7 +960,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -745,7 +981,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -753,7 +989,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -774,7 +1010,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -782,7 +1018,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -803,7 +1039,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -811,7 +1047,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -832,7 +1068,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -840,7 +1076,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -861,7 +1097,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -869,7 +1105,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -890,7 +1126,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -898,7 +1134,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -919,7 +1155,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -927,7 +1163,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -948,7 +1184,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -956,7 +1192,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -977,7 +1213,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -985,7 +1221,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1006,7 +1242,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1014,7 +1250,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1035,7 +1271,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1043,7 +1279,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1064,7 +1300,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1072,7 +1308,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1093,7 +1329,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1101,7 +1337,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1122,7 +1358,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1130,7 +1366,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1151,7 +1387,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1159,7 +1395,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1180,7 +1416,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1188,7 +1424,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1209,7 +1445,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1217,7 +1453,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1238,7 +1474,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1246,7 +1482,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1267,7 +1503,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1275,7 +1511,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1296,7 +1532,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1304,7 +1540,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1325,7 +1561,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1333,7 +1569,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1354,7 +1590,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1362,7 +1598,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1383,7 +1619,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1391,7 +1627,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1412,7 +1648,7 @@
                             <div class="col-lg-6">
                                 <div class="description">
                                     <div class="row">
-                                        <div class="col-lg-12">  
+                                        <div class="col-lg-12">
                                             <p class="titleDescription text-center">Dents en OR</p>
                                             <p class="text-center">Informations sur l'article</p>
                                         </div>
@@ -1420,7 +1656,7 @@
                                             <p class="price text-center">00,00 euros</p>
                                         </div>
                                         <div class="col-lg-6 text-center">
-                                            <button>Ajouter au panier</button>   
+                                            <button>Ajouter au panier</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1431,24 +1667,25 @@
             </div>
             <!--Fin description 48-->
         </section>
-        </div>
-        <footer id="bottomMenu">
-            <figure class="networkButton float-left d-flex align-items-center justify-content-center">
-                <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
-                <img src="assets/img/iconeTweeter.png">
-            </figure>
-            <figure class="networkButton float-left d-flex align-items-center justify-content-center">
-                <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
-                <img src="assets/img/iconeInstagram.png">
-            </figure>
-            <figure class="networkButton float-left d-flex align-items-center justify-content-center">
-                <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
-                <img src="assets/img/iconFacebook.png">
-            </figure>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+    </div>
+    <footer id="bottomMenu">
+        <figure class="networkButton float-left d-flex align-items-center justify-content-center">
+            <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
+            <img src="assets/img/iconeTweeter.png">
+        </figure>
+        <figure class="networkButton float-left d-flex align-items-center justify-content-center">
+            <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
+            <img src="assets/img/iconeInstagram.png">
+        </figure>
+        <figure class="networkButton float-left d-flex align-items-center justify-content-center">
+            <source srcset="assets/img/min/iconGmail.png" media="(max-width:991px)">
+            <img src="assets/img/iconFacebook.png">
+        </figure>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
