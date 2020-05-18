@@ -42,7 +42,9 @@ h1 {
 #contentPage {
     background-image: url("../img/fondGold.jpg");
 }
-
+#productsLists, #presentation, #presentationTextList {
+    display: none;
+}
 
 /* Listenning produit */
 

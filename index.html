@@ -21,10 +21,10 @@
                         <div id="goldThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" onclick="selectThema('gold')" href="#">L'or</a></div>
                         <div id="bucksThema" class="nav-item float-left d-flex align-items-center"><a class="text-center text-dark font-weight-bold w-100" onclick="selectThema('bucks')" href="#">Les billets</a></div>
                     </li>
-                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100 categorieSelector" thema="gold" onclick="showProducts(thema, 'daylyObject')" href="#">Objets du quotidien</a></li>
-                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100 categorieSelector" thema="gold" onclick="showProducts(thema, 'accessory')" href="#">Accessoires</a></li>
-                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100 categorieSelector" thema="gold" onclick="showProducts(thema, 'costume')" href="#">Costumes</a></li>
-                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100 categorieSelector" thema="gold" onclick="showProducts(thema, 'decoration')" href="#">Décorations</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" id="categorieSelector1" onclick="showProducts('gold', 'DaylyObject')" href="#">Objets du quotidien</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" id="categorieSelector2" onclick="showProducts('gold', 'Accessory')" href="#">Accessoires</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" id="categorieSelector3" onclick="showProducts('gold', 'Costume')" href="#">Costumes</a></li>
+                    <li class="nav-item d-flex align-items-center categorie"><a class="text-white text-center w-100" id="categorieSelector4" onclick="showProducts('gold', 'Decoration')" href="#">Décorations</a></li>
                 </ul>
             </div>
             <h1 class="float-left text-center">Gold'Toc</h1>
@@ -39,7 +39,7 @@
             <h3 class="my-3 text-center">Tu veux paraître riche, mais tu n'as pas de thunes ?! Gold'Toc est fait pour toi !</h3>
             <img src="assets/img/accueil.png" class="offset-1 col-10" alt="" />
         </section>
-        <section id="productsList">
+        <section id="productsLists">
             <h1 class="productListe goldDaylyObject">Objets du quotidien</h1>
             <div class="container productListe goldDaylyObject">
                 <div class="row">
