@@ -49,3 +49,87 @@ function showProducts(thema, categorie){
     document.getElementById('gold').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
     document.getElementById('bucks').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
 }
+//fonction ajouter au panier
+function addToBasket(price, ref, title) {
+    var itemContainer = document.getElementById('itemContainer');
+    //création de la ligne pour le produit
+    var item = document.createElement('tr');
+    item.setAttribute('class', 'itemContainer');
+    item.setAttribute('id', '#' + ref);
+    itemContainer.appendChild(item);
+    //création de la colone pour l'image
+    var imageContainer = document.createElement('td');
+    imageContainer.setAttribute('class', 'imageContainer');
+    item.appendChild(imageContainer);
+    //création de l'image
+    var image = document.createElement('img');
+    image.src = 'assets/img/products/' + ref;
+    imageContainer.appendChild(image);
+    //création de la colonne nom
+    var nameContainer = document.createElement('td');
+    nameContainer.setAttribute('class', 'nameContainer');
+    nameContainer.innerHTML = title;
+    item.appendChild(nameContainer);
+    //création de la colonne quantité
+    var qtyContainer = document.createElement('td');
+    qtyContainer.setAttribute('class', 'qtyContainer');
+    item.appendChild(qtyContainer);
+    //création du bouton moins
+    var lessButton = document.createElement('button');
+    lessButton.setAttribute('onclick', 'setItemQty(\'qty#' + ref + '\', -1)');
+    lessButton.innerHTML = '-';
+    qtyContainer.appendChild(lessButton);
+    //création du paragraphe quantité
+    var qtyValue = document.createElement('p');
+    qtyValue.setAttribute('class', 'qtyValue');
+    qtyValue.setAttribute('id', 'qty#'+ ref);
+    qtyValue.innerHTML = 1;
+    qtyContainer.appendChild(qtyValue);
+    //création du bouton plus
+    var moreButton = document.createElement('button');
+    moreButton.setAttribute('onclick', 'setItemQty(\'qty#' + ref + '\', 1)');
+    moreButton.innerHTML = '+';
+    qtyContainer.appendChild(moreButton);
+    //création de la colonne prix
+    var priceContainer = document.createElement('td');
+    priceContainer.setAttribute('class', 'priceContainer');
+    priceContainer.innerHTML = price;
+    item.appendChild(priceContainer);
+    //création de la colonne pour le bouton supprimer
+    var removeButtonConteneur = document.createElement('td');
+    removeButtonConteneur.setAttribute('class', 'removeButtonConteneur');
+    item.appendChild(removeButtonConteneur);
+    //création du bouton supprimer
+    var removeButton = document.createElement('button');
+    removeButton.setAttribute('class', 'removeButton');
+    removeButton.setAttribute('onclick', 'removeItem(\'#' + ref + '\')');
+    removeButton.innerHTML = 'Supprimer l\'article';
+    removeButtonConteneur.appendChild(removeButton); 
+}
+//fonction calculant le total du panier
+function calculTotal() {
+var priceListe = document.getElementsByClassName('priceContainer');
+var qtyValueListe = document.getElementsByClassName('qtyValue')
+var total = document.getElementById('total');
+var price = 0;
+for (index = 0; index < priceListe.length; index++) {
+    price += Number(priceListe[index].innerHTML) * Number(qtyValueListe[index].innerHTML);
+    console.log(price);
+}
+total.innerHTML = price + ' euros TTC';
+}
+//fonction permettant de supprimer un article du panier
+function removeItem(ref) {
+    document.getElementById(ref).remove();
+    calculTotal();
+}
+//fonction permettant de changer la quantité
+function setItemQty(item, value) {
+  var qtyValue = Number(document.getElementById(item).innerHTML);
+  console.log(qtyValue);
+  if (qtyValue == 1 && value == -1) {
+  }else {
+    document.getElementById(item).innerHTML = qtyValue + Number(value);
+  }
+  calculTotal();
+}

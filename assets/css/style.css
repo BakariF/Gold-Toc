@@ -26,6 +26,9 @@ h1 {
 #menuContent {
     z-index: 3;   
 }
+#menuContent {
+    z-index: 3;
+}
 
 #bucksThema {
     background-image: url("../img/fondButtonBillet.jpg");
@@ -51,6 +54,7 @@ h1 {
 #productsLists, #presentation, #presentationTextList {
     display: none;
 }
+
 
 /* Listenning produit */
 
@@ -88,6 +92,19 @@ h1 {
     border-radius: 10px;
     border: none;
     padding: 10px;
+}
+/* panier */
+.imageContainer img {
+    width: 80%;
+}
+.modal-dialog {
+    max-width: none;
+}
+thead th {
+    width: 20%;
+}
+th, td {
+    text-align: center;
 }
 
 @media screen and (min-width:991px) {
@@ -127,6 +144,9 @@ h1 {
     #addBasketButton {
         margin-top: 150px;
     }
+    #topMenu a {
+        width: 10%;
+    }
     /* Menu + footer (end) */
 }
 
@@ -136,8 +156,7 @@ h1 {
     footer {
         height: 60px;
     }
-    #menuButton,
-    #panier {
+    #menuButton, #topMenu a {
         width: 25%;
     }
     #menuList {
