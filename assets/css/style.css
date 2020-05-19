@@ -20,7 +20,7 @@ footer {
 }
 
 h1 {
-    color: rgb(155, 152, 9);
+    color: #887c0f;
 }
 
 #bucksThema {
@@ -50,7 +50,7 @@ h1 {
     text-align: center;
 }
 
-p {
+#productsList p {
     text-align: center;
     width: 75%;
     font-weight: bold;
