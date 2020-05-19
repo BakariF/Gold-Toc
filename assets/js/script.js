@@ -24,13 +24,13 @@ function showPresentation(price, ref, title) {
     addBasketButton.setAttribute('onclick', 'addToBasket(\'' + price + '\', \'' + ref + '\', \'' + title + '\')');
 }
 //fonction sélectionnant le thème
-function selectThema(thema) {
+function selectThema(thema, categorie) {
     var categorieSelector = document.getElementsByClassName("categorieSelector");
-    document.getElementById('categorieSelector1').setAttribute('onclick', 'showProducts(\'' + thema + '\', \'DaylyObject\')');
-    document.getElementById('categorieSelector2').setAttribute('onclick', 'showProducts(\'' + thema + '\', \'Accessory\')');
-    document.getElementById('categorieSelector3').setAttribute('onclick', 'showProducts(\'' + thema + '\', \'Costume\')');
-    document.getElementById('categorieSelector4').setAttribute('onclick', 'showProducts(\'' + thema + '\', \'Decoration\')');
-    showProducts(thema, 'DaylyObject')
+    document.getElementById('DaylyObject').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Accessory').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Costume').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Decoration').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    showProducts(thema, categorie)
 }
 //fonction affichant la liste des produits voulus
 function showProducts(thema, categorie){
@@ -47,5 +47,6 @@ function showProducts(thema, categorie){
         selectedProductListe[index3].style.display = 'block';
     }
     document.getElementById('productsLists').style.display = 'block';
-    console.log(thema + categorie);
+    document.getElementById('gold').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
+    document.getElementById('bucks').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
 }
