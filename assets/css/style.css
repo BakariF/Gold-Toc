@@ -22,6 +22,9 @@ footer {
 h1 {
     color: rgb(155, 152, 9);
 }
+#menuContent {
+    z-index: 3;
+}
 
 #bucksThema {
     background-image: url("../img/fondButtonBillet.jpg");
@@ -83,6 +86,10 @@ h1 {
     border-radius: 10px;
     border: none;
     padding: 10px;
+}
+/* panier */
+.imageContainer img {
+    width: 200px;
 }
 
 @media screen and (min-width:991px) {

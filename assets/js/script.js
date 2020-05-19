@@ -49,3 +49,46 @@ function showProducts(thema, categorie){
     document.getElementById('gold').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
     document.getElementById('bucks').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
 }
+//fonction ajouter au panier
+function addToBasket(price, ref, title) {
+    var itemContainer = document.getElementById('itemContainer');
+    //création de la ligne pour le produit
+    var item = document.createElement('tr');
+    item.setAttribute('class', 'itemContainer');
+    item.setAttribute('id', ref);
+    itemContainer.appendChild(item);
+    //création de la colone pour l'image
+    var imageContainer = document.createElement('td');
+    imageContainer.setAttribute('class', 'imageContainer');
+    item.appendChild(imageContainer);
+    //création de l'image
+    var image = document.createElement('img');
+    image.src = 'assets/img/products/' + ref;
+    imageContainer.appendChild(image);
+    //création de la colonne nom
+    var nameContainer = document.createElement('td');
+    nameContainer.setAttribute('class', 'nameContainer');
+    nameContainer.innerHTML = title;
+    item.appendChild(nameContainer);
+    //création de la colonne quantité
+    var qtyContainer = document.createElement('td');
+    qtyContainer.setAttribute('class', 'qtyContainer');
+    qtyContainer.innerHTML = 1;
+    item.appendChild(qtyContainer);
+    //création de la colonne prix
+    var priceContainer = document.createElement('td');
+    priceContainer.setAttribute('class', 'priceContainer');
+    priceContainer.innerHTML = price;
+    item.appendChild(priceContainer);
+}
+//fonction calculant le total du panier
+function calculTotal() {
+var priceListe = document.getElementsByClassName('priceContainer');
+var total = document.getElementById('total');
+var price = 0;
+for (index = 0; index < priceListe.length; index++) {
+    price += Number(priceListe[index].innerHTML);
+    console.log(price);
+}
+total.innerHTML = price + ' euros TTC';
+}

@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <h1 class="float-left text-center">Gold'Toc</h1>
-            <a type="button" class="float-left text-center" data-toggle="modal" data-target="#monModal" href="#"><img alt="panier" src="assets/img/min/iconePanier.png"></a>
+            <a type="button" class="float-left text-center" data-toggle="modal" onclick="calculTotal()" data-target="#monModal" href="#"><img alt="panier" src="assets/img/min/iconePanier.png"></a>
             <div class="modal" tabindex="-1" id="monModal" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -49,18 +49,12 @@
                                         <th>Prix</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
+                                <tbody id="itemContainer">
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>Total</td>
-                                        <td></td>
+                                        <td id="total"></td>
                                     </tr>
                                 </tfoot>
                             </table>
