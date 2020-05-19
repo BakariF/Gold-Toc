@@ -12,9 +12,10 @@
 <body>
     <header id="topMenu">
         <nav class="navbar navbar-expand-lg w-100" id="menu">
-            <button id="menuButton" class="navbar-toggler float-left text-center" data-toggle="collapse" data-target="#menuContent">
-                    <img src="assets/img/min/menu.png">
-                </button>
+            <button id="menuButton" class="navbar-toggler float-left text-center" data-toggle="collapse"
+                data-target="#menuContent">
+                <img src="assets/img/min/menu.png">
+            </button>
             <div class="collapse navbar-collapse order-3 order-lg-0" id="menuContent">
                 <ul id="menuList" class="navbar-nav">
                     <li class="nav-item thema">
@@ -28,71 +29,55 @@
                 </ul>
             </div>
             <h1 class="float-left text-center">Gold'Toc</h1>
-            <input type="image" id="image" alt="panier" src="assets/img/min/iconePanier.png" class="float-left text-center" data-toggle="modal"
-            data-target="#monModal"  href="redirection"/>
-            </div>
-            
-            <div class="modal container-fluid" id="monModal">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header row">
-                    <button type="button" class="close col-3" data-dismiss="modal">x</button>
-                <p class="modal-title col-12 font-weight-bold text-center">Mon panier</p>
+            <a type="button" class="float-left text-center" data-toggle="modal" data-target="#monModal" href="#"><img alt="panier" src="assets/img/min/iconePanier.png"></a>
+            <div class="modal" tabindex="-1" id="monModal" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Mon Panier</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Nom</th>
+                                        <th>Qté</th>
+                                        <th>Prix</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-                <table>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Nom</th>
-                        <th>Qté</th>
-                        <th>Prix</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                    <tfoot>
-                            <tr>
-                              <td>Frais de livraison</td>
-                              <td></td>
-                            </tr>
-                    </tfoot>
-                    </tbody>
-                    </table>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Acheter</button>
-                 </div>
-                </div>
-            </div>
             </div>
         </nav>
     </header>
     <div id="contentPage">
         <section id="Accueil">
             <h2 class="pt-2 text-center">Bienvenue chez Gold'Toc</h2>
-            <h3 class="my-3 text-center">Tu veux paraître riche, mais tu n'as pas de thunes ?! Gold'Toc est fait pour toi !</h3>
+            <h3 class="my-3 text-center">Tu veux paraître riche, mais tu n'as pas de thunes ?! Gold'Toc est fait pour
+                toi !</h3>
             <img src="assets/img/accueil.png" class="offset-1 col-10" alt="" />
         </section>
         <section id="productsLists">
@@ -100,27 +85,37 @@
             <div class="container productListe goldDaylyObject">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/GObriquet.jpg" onclick="showPresentation(10, 'GObriquet.jpg', alt)" alt="Briquet en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GObriquet.jpg"
+                            onclick="showPresentation(10, 'GObriquet.jpg', alt)" alt="Briquet en or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GOclavier.jpg" onclick="showPresentation(10, 'GOclavier.jpg', alt)" alt="Clavier en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GOclavier.jpg"
+                            onclick="showPresentation(10, 'GOclavier.jpg', alt)" alt="Clavier en or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GOusb.png" onclick="showPresentation(10, 'GOusb.png', alt)" alt="Clé USB en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GOusb.png" onclick="showPresentation(10, 'GOusb.png', alt)"
+                            alt="Clé USB en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GOpapierToilette.png" onclick="showPresentation(10, 'GOpapierToilette.png', alt)" alt="Papier toillette en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GOpapierToilette.png"
+                            onclick="showPresentation(10, 'GOpapierToilette.png', alt)" alt="Papier toillette en or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GOsouris.jpg" onclick="showPresentation(10, 'GOsouris.jpg', alt)" alt="Souris en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GOsouris.jpg" onclick="showPresentation(10, 'GOsouris.jpg', alt)"
+                            alt="Souris en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GOtubeuse.jpg" onclick="showPresentation(10, 'GOtubeuse.jpg', alt)" alt="Tubeuse en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GOtubeuse.jpg"
+                            onclick="showPresentation(10, 'GOtubeuse.jpg', alt)" alt="Tubeuse en or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -129,27 +124,36 @@
             <div class="container productListe bucksDaylyObject">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/BObriquet.jpg" onclick="showPresentation(10, 'BObriquet.jpg', alt)" alt="Briquet en billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BObriquet.jpg"
+                            onclick="showPresentation(10, 'BObriquet.jpg', alt)" alt="Briquet en billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BOusb.png" onclick="showPresentation(10, 'BOusb.png', alt)" alt="Clé USB en billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BOusb.png" onclick="showPresentation(10, 'BOusb.png', alt)"
+                            alt="Clé USB en billet" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BOpapierToilette.png" onclick="showPresentation(10, 'BOusb.png', alt)" alt="Papier toillette en billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BOpapierToilette.png"
+                            onclick="showPresentation(10, 'BOusb.png', alt)" alt="Papier toillette en billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BOpince.png" onclick="showPresentation(10, 'BOpince.png', alt)" alt="Pince à billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BOpince.png" onclick="showPresentation(10, 'BOpince.png', alt)"
+                            alt="Pince à billet" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BOtasse.png" onclick="showPresentation(10, 'BOtasse.png', alt)" alt="Tasse billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BOtasse.png" onclick="showPresentation(10, 'BOtasse.png', alt)"
+                            alt="Tasse billet" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BOmouchoir.jpg" onclick="showPresentation(10, 'BOmouchoir.jpg', alt)" alt="Mouchoirs billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BOmouchoir.jpg"
+                            onclick="showPresentation(10, 'BOmouchoir.jpg', alt)" alt="Mouchoirs billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -158,27 +162,35 @@
             <div class="container productListe goldAccessory">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/GAbagues.png" onclick="showPresentation(10, 'GAbagues.png', alt)" alt="Bagues en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GAbagues.png" onclick="showPresentation(10, 'GAbagues.png', alt)"
+                            alt="Bagues en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GAcacheTetons.png" onclick="showPresentation(10, 'GAcacheTetons.png', alt)" alt="Cache téton or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GAcacheTetons.png"
+                            onclick="showPresentation(10, 'GAcacheTetons.png', alt)" alt="Cache téton or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GAchaine.png" onclick="showPresentation(10, 'GAchaine.png', alt)" alt="Chaînes en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GAchaine.png" onclick="showPresentation(10, 'GAchaine.png', alt)"
+                            alt="Chaînes en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GAdents.png" onclick="showPresentation(10, 'GAdents.png', alt)" alt="Dents en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GAdents.png" onclick="showPresentation(10, 'GAdents.png', alt)"
+                            alt="Dents en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GApistolet.jpg" onclick="showPresentation(10, 'GApistolet.jpg', alt)" alt="Pistolet à billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GApistolet.jpg"
+                            onclick="showPresentation(10, 'GApistolet.jpg', alt)" alt="Pistolet à billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GAtetine.png" onclick="showPresentation(10, 'GAtetine.png', alt)" alt="Tétine en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GAtetine.png" onclick="showPresentation(10, 'GAtetine.png', alt)"
+                            alt="Tétine en or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -187,27 +199,36 @@
             <div class="container productListe bucksAccessory">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/BAlot.jpg" onclick="showPresentation(10, 'BAlot.jpg', alt)" alt="Billets" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAlot.jpg" onclick="showPresentation(10, 'BAlot.jpg', alt)"
+                            alt="Billets" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BAboucle.jpg" onclick="showPresentation(10, 'BAboucle.jpg', alt)" alt="Boucle ceinture billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAboucle.jpg" onclick="showPresentation(10, 'BAboucle.jpg', alt)"
+                            alt="Boucle ceinture billet" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BAtirelire.png" onclick="showPresentation(10, 'BAtirelire.png', alt)" alt="Cadenas billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAtirelire.png"
+                            onclick="showPresentation(10, 'BAtirelire.png', alt)" alt="Cadenas billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BAcasquette.jpg" onclick="showPresentation(10, 'BAcasquette.jpg', alt)" alt="Casquette billets" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAcasquette.jpg"
+                            onclick="showPresentation(10, 'BAcasquette.jpg', alt)" alt="Casquette billets"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BAcoque.png" onclick="showPresentation(10, 'BAcoque.png', alt)" alt="Coque téléphone" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAcoque.png" onclick="showPresentation(10, 'BAcoque.png', alt)"
+                            alt="Coque téléphone" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BAparapluie.jpg" onclick="showPresentation(10, 'BAparapluie.jpg', alt)" alt="Parapluie billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BAparapluie.jpg"
+                            onclick="showPresentation(10, 'BAparapluie.jpg', alt)" alt="Parapluie billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -216,27 +237,36 @@
             <div class="container productListe goldCostume">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/GChommeNoir.jpeg" onclick="showPresentation(10, 'GChommeNoir.jpeg', alt)" alt="Costume en or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GChommeNoir.jpeg"
+                            onclick="showPresentation(10, 'GChommeNoir.jpeg', alt)" alt="Costume en or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GChommeRouge.jpg" onclick="showPresentation(10, 'GChommeRouge.jpg', alt)" alt="Emir quataris" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GChommeRouge.jpg"
+                            onclick="showPresentation(10, 'GChommeRouge.jpg', alt)" alt="Emir quataris"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GCenfant.jpg" onclick="showPresentation(10, 'GCenfant.jpg', alt)" alt="Costume en or enfant" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GCenfant.jpg" onclick="showPresentation(10, 'GCenfant.jpg', alt)"
+                            alt="Costume en or enfant" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GCrobe.jpg" onclick="showPresentation(10, 'GCrobe.jpg', alt)" alt="Robe de soirée or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GCrobe.jpg" onclick="showPresentation(10, 'GCrobe.jpg', alt)"
+                            alt="Robe de soirée or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GCrobe2.jpg" onclick="showPresentation(10, 'GCrobe2.jpg', alt)" alt="Robe soirée or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GCrobe2.jpg" onclick="showPresentation(10, 'GCrobe2.jpg', alt)"
+                            alt="Robe soirée or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GCfemmeCombi.jpg" onclick="showPresentation(10, 'GCfemmeCombi.jpg', alt)" alt="Juste au corps or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GCfemmeCombi.jpg"
+                            onclick="showPresentation(10, 'GCfemmeCombi.jpg', alt)" alt="Juste au corps or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -245,27 +275,37 @@
             <div class="container productListe bucksCostume">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/BChommeVert.jpg" onclick="showPresentation(10, 'BChommeVert.jpg', alt)" alt="Veste dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BChommeVert.jpg"
+                            onclick="showPresentation(10, 'BChommeVert.jpg', alt)" alt="Veste dollar"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BChommeBeige.jpg" onclick="showPresentation(10, 'BChommeBeige.jpg', alt)" alt="Costume homme dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BChommeBeige.jpg"
+                            onclick="showPresentation(10, 'BChommeBeige.jpg', alt)" alt="Costume homme dollar"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BCfemmeSexy.jpg" onclick="showPresentation(10, 'BCfemmeSexy.jpg', alt)" alt="Costume femme dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BCfemmeSexy.jpg"
+                            onclick="showPresentation(10, 'BCfemmeSexy.jpg', alt)" alt="Costume femme dollar"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BCenfant.jpg" onclick="showPresentation(10, 'BCenfant.jpg', alt)" alt="Dollar enfant" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BCenfant.jpg" onclick="showPresentation(10, 'BCenfant.jpg', alt)"
+                            alt="Dollar enfant" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BCbebe.jpg" onclick="showPresentation(10, 'BCbebe.jpg', alt)" alt="Bébé dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BCbebe.jpg" onclick="showPresentation(10, 'BCbebe.jpg', alt)"
+                            alt="Bébé dollar" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BCfemmeVert.gif" onclick="showPresentation(10, 'BCfemmeVert.gif', alt)" alt="Robe femme dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BCfemmeVert.gif"
+                            onclick="showPresentation(10, 'BCfemmeVert.gif', alt)" alt="Robe femme dollar"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -274,27 +314,34 @@
             <div class="container productListe goldDecoration">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/GDelephant.jpg" onclick="showPresentation(10, 'GDelephant.jpg', alt)" alt="Statue éléphant or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDelephant.jpg"
+                            onclick="showPresentation(10, 'GDelephant.jpg', alt)" alt="Statue éléphant or"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GDcanape.jpg" onclick="showPresentation(10, 'GDcanape.jpg', alt)" alt="Fauteuil or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDcanape.jpg" onclick="showPresentation(10, 'GDcanape.jpg', alt)"
+                            alt="Fauteuil or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GDverre.jpeg" onclick="showPresentation(10, 'GDverre.jpeg', alt)" alt="Verre coca or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDverre.jpeg" onclick="showPresentation(10, 'GDverre.jpeg', alt)"
+                            alt="Verre coca or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GDcerise.jpg" onclick="showPresentation(10, 'GDcerise.jpg', alt)" alt="Cerises d'or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDcerise.jpg" onclick="showPresentation(10, 'GDcerise.jpg', alt)"
+                            alt="Cerises d'or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GDananas.jpg" onclick="showPresentation(10, 'GDananas.jpg', alt)" alt="Ananas or" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDananas.jpg" onclick="showPresentation(10, 'GDananas.jpg', alt)"
+                            alt="Ananas or" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/GDmain.jpg" onclick="showPresentation(10, 'GDmain.jpg', alt)" alt="Main dorée" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/GDmain.jpg" onclick="showPresentation(10, 'GDmain.jpg', alt)"
+                            alt="Main dorée" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
@@ -303,27 +350,36 @@
             <div class="container productListe bucksDecoration">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/img/products/BDliterie.jpg" onclick="showPresentation(10, 'BDliterie.jpg', alt)" alt="Housse de couette dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDliterie.jpg"
+                            onclick="showPresentation(10, 'BDliterie.jpg', alt)" alt="Housse de couette dollar"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BDnappe.jpg" onclick="showPresentation(10, 'BDnappe.jpg', alt)" alt="Nappe billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDnappe.jpg" onclick="showPresentation(10, 'BDnappe.jpg', alt)"
+                            alt="Nappe billet" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BDpapierPeint.jpeg" onclick="showPresentation(10, 'BDpapierPeint.jpeg', alt)" alt="Papier peint" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDpapierPeint.jpeg"
+                            onclick="showPresentation(10, 'BDpapierPeint.jpeg', alt)" alt="Papier peint"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BDsol.jpg" onclick="showPresentation(10, 'BDsol.jpg', alt)" alt="Sol dollar" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDsol.jpg" onclick="showPresentation(10, 'BDsol.jpg', alt)"
+                            alt="Sol dollar" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BDtableau.png" onclick="showPresentation(10, 'BDtableau.png', alt)" alt="Tableau billet" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDtableau.png"
+                            onclick="showPresentation(10, 'BDtableau.png', alt)" alt="Tableau billet"
+                            style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                     <div class="col-4">
-                        <img src="assets/img/products/BDsocle.png" onclick="showPresentation(10, 'BDsocle.png', alt)" alt="Socle billet de banque" style="width: 100%; height: 84%;">
+                        <img src="assets/img/products/BDsocle.png" onclick="showPresentation(10, 'BDsocle.png', alt)"
+                            alt="Socle billet de banque" style="width: 100%; height: 84%;">
                         <p>Prix :</p>
                     </div>
                 </div>
