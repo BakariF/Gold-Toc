@@ -30,30 +30,30 @@
             </div>
             <h1 class="float-left text-center">Gold'Toc</h1>
             <a type="button" class="float-left text-center" data-toggle="modal" onclick="calculTotal()" data-target="#monModal" href="#"><img alt="panier" src="assets/img/min/iconePanier.png"></a>
-            <div class="modal" tabindex="-1" id="monModal" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Mon Panier</h5>
+            <div class="modal offset-1 col-10" tabindex="-1" id="monModal" role="dialog">
+                <div class="modal-dialog w-100" role="document">
+                    <div class="modal-content w-100">
+                        <div class="modal-header .modal-dialog">
+                            <h5 class="modal-title text-center w-100">Mon Panier</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <table>
+                        <div class="modal-body w-100">
+                            <table class="w-100">
                                 <thead>
                                     <tr>
-                                        <th>Image</th>
-                                        <th>Nom</th>
-                                        <th>Qté</th>
-                                        <th>Prix</th>
+                                        <th class="text-center">Image</th>
+                                        <th class="text-center">Nom</th>
+                                        <th class="text-center">Qté</th>
+                                        <th class="text-center">Prix</th>
                                     </tr>
                                 </thead>
                                 <tbody id="itemContainer">
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td>Total</td>
+                                        <td id="totalTitle" class="text-center">Total</td>
                                         <td id="total"></td>
                                     </tr>
                                 </tfoot>

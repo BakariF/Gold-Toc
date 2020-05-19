@@ -55,7 +55,7 @@ function addToBasket(price, ref, title) {
     //création de la ligne pour le produit
     var item = document.createElement('tr');
     item.setAttribute('class', 'itemContainer');
-    item.setAttribute('id', ref);
+    item.setAttribute('id', '#' + ref);
     itemContainer.appendChild(item);
     //création de la colone pour l'image
     var imageContainer = document.createElement('td');

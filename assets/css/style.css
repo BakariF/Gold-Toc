@@ -97,7 +97,16 @@ h1 {
 }
 /* panier */
 .imageContainer img {
-    width: 200px;
+    width: 80%;
+}
+.modal-dialog {
+    max-width: none;
+}
+thead th {
+    width: 20%;
+}
+th, td {
+    text-align: center;
 }
 
 @media screen and (min-width:991px) {
