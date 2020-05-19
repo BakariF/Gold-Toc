@@ -58,6 +58,7 @@ h1 {
     display: none;
 }
 
+
 /* Listenning produit */
 
 h1 {
@@ -146,6 +147,9 @@ th, td {
     #addBasketButton {
         margin-top: 150px;
     }
+    #topMenu a {
+        width: 10%;
+    }
     /* Menu + footer (end) */
 }
 
@@ -155,8 +159,7 @@ th, td {
     footer {
         height: 60px;
     }
-    #menuButton,
-    #panier {
+    #menuButton, #topMenu a {
         width: 25%;
     }
     #menuList {
