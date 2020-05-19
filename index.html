@@ -28,8 +28,64 @@
                 </ul>
             </div>
             <h1 class="float-left text-center">Gold'Toc</h1>
-            <div id="panier" class="float-left text-center">
-                <img src="assets/img/min/iconePanier.png">
+            <input type="image" id="image" alt="panier" src="assets/img/min/iconePanier.png" class="float-left text-center" data-toggle="modal"
+            data-target="#monModal"  href="redirection"/>
+            </div>
+            
+            <div class="modal container-fluid" id="monModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header row">
+                    <button type="button" class="close col-3" data-dismiss="modal">x</button>
+                <p class="modal-title col-12 font-weight-bold text-center">Mon panier</p>
+                </div>
+                <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Nom</th>
+                        <th>Qté</th>
+                        <th>Prix</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                    <tfoot>
+                            <tr>
+                              <td>Frais de livraison</td>
+                              <td></td>
+                            </tr>
+                    </tfoot>
+                    </tbody>
+                    </table>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Acheter</button>
+                 </div>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
