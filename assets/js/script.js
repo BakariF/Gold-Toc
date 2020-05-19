@@ -25,7 +25,6 @@ function showPresentation(price, ref, title) {
 }
 //fonction sélectionnant le thème
 function selectThema(thema, categorie) {
-    var categorieSelector = document.getElementsByClassName("categorieSelector");
     document.getElementById('DaylyObject').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
     document.getElementById('Accessory').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
     document.getElementById('Costume').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
