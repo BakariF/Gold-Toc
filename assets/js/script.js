@@ -5,7 +5,7 @@ var footerHeight = document.getElementById('bottomMenu').clientHeight;
 document.getElementById('contentPage').style.minHeight = screenHeight - menuHeight - footerHeight + 'px';
 //fonction montrant la présentation du produit sélectionné
 function showPresentation(price, ref, title) {
-    //var textPresentation = document.getElementById(ref).innerHTML;
+    var textPresentation = document.getElementById(ref).innerHTML;
     var presentationImage = document.getElementById('presentationImage');
     var presentationTitle = document.getElementById('presentationTitle');
     var presentationTexte = document.getElementById('presentationText');
@@ -19,17 +19,33 @@ function showPresentation(price, ref, title) {
     presentationImage.src = 'assets/img/products/' + ref;
     presentationImage.alt = title;
     presentationTitle.innerHTML = title;
-    //presentationTexte.innerHTML = textPresentation;
+    presentationTexte.innerHTML = textPresentation;
     presentationPrice.innerHTML = price + ' euros';
-    addBasketButton.setAttribute('price', price);
-    addBasketButton.setAttribute('ref', ref);
-    addBasketButton.setAttribute('title', title);
+    addBasketButton.setAttribute('onclick', 'addToBasket(\'' + price + '\', \'' + ref + '\', \'' + title + '\')');
 }
 //fonction sélectionnant le thème
-function selectThema(thema) {
-    var categorieSelector = document.getElementsByClassName("categorieSelector");
-    for (index = 0; index < categorieSelector.length; index++){
-        categorieSelector[index].setAttribute('thema', thema);
-    }
+function selectThema(thema, categorie) {
+    document.getElementById('DaylyObject').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Accessory').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Costume').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    document.getElementById('Decoration').setAttribute('onclick', 'showProducts(\'' + thema + '\', id)');
+    showProducts(thema, categorie)
 }
 //fonction affichant la liste des produits voulus
+function showProducts(thema, categorie){
+    var productLists = document.getElementsByClassName('productListe');
+    var selectedProductListe = document.getElementsByClassName(thema + categorie);
+    var sectionList = document.getElementsByTagName('section');
+    for (index = 0; index < sectionList.length; index++) {
+        sectionList[index].style.display = 'none';
+    }
+    for (index2 = 0; index2 < productLists.length; index2++){
+        productLists[index2].style.display = 'none';
+    }
+    for (index3 = 0; index3 < selectedProductListe.length; index3++){
+        selectedProductListe[index3].style.display = 'block';
+    }
+    document.getElementById('productsLists').style.display = 'block';
+    document.getElementById('gold').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
+    document.getElementById('bucks').setAttribute('onclick', 'selectThema(id, \'' + categorie + '\')');
+}

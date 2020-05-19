@@ -23,6 +23,10 @@ h1 {
     color: #887c0f;
 }
 
+#menuContent {
+    z-index: 3;   
+}
+
 #bucksThema {
     background-image: url("../img/fondButtonBillet.jpg");
 }
@@ -36,13 +40,20 @@ h1 {
     margin-bottom: 0;
 }
 
+.productListe {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 
 /* Menu + footer (end) */
 
 #contentPage {
     background-image: url("../img/fondGold.jpg");
 }
-
+#productsLists, #presentation, #presentationTextList {
+    display: none;
+}
 
 /* Listenning produit */
 
@@ -50,8 +61,7 @@ h1 {
     text-align: center;
 }
 
-#productsList p {
-    text-align: center;
+#productsLists p {
     width: 75%;
     font-weight: bold;
     color: white;
@@ -75,7 +85,7 @@ h1 {
     font-weight: bold;
 }
 
-button {
+#presentation button {
     background-color: #887c0f;
     color: white;
     border-radius: 10px;
@@ -109,6 +119,16 @@ button {
     #bucksThema {
         width: 100%;
         height: 50px;
+    }
+    #presentationTitle {
+        margin-top: 10px;
+    }
+    #presentationText {
+        margin-top: 100px;
+    }
+    #presentationPrice,
+    #addBasketButton {
+        margin-top: 150px;
     }
     /* Menu + footer (end) */
 }
